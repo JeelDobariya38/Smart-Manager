@@ -16,6 +16,7 @@ lib64/
 .venv
 env/
 venv/
+dev_venv/
 ENV/
 env.bak/
 venv.bak/
@@ -29,3 +30,4 @@ venv.bak/
 dmypy.json
 
 .idea/
+.vscode/
