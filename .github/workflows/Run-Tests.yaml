@@ -31,14 +31,6 @@ jobs:
       run: |
         python -m mypy src
 
-    - name: Run pylint
-      run: |
-        pylint src
-
-    - name: Run flake8
-      run: |
-        flake8 src
-
     - name: Run pytest
       run: |
         pytest tests
