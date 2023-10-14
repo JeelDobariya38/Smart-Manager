@@ -5,4 +5,4 @@ class MockInputHandler:
     def input(self, prompt):
         print(prompt)
         if len(self.inp):
-            return self.inp.pop().strip()
+            return self.inp.pop()

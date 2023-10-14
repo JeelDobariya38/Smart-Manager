@@ -19,6 +19,18 @@ class TestMain:
         captured = capfd.readouterr()
         assert "Quitting the app..." in captured.out
 
+    def test_main_spaced_command(self, capfd) -> None:
+        mock = MockInputHandler(["  quit"])
+        main(mock)
+        captured = capfd.readouterr()
+        assert "Quitting the app..." in captured.out
+    
+    def test_main_uppercase_command(self, capfd) -> None:
+        mock = MockInputHandler(["QUIT"])
+        main(mock)
+        captured = capfd.readouterr()
+        assert "Quitting the app..." in captured.out
+
     def test_main_empty_command(self, capfd) -> None:
         mock = MockInputHandler(["quit","",""])
         main(mock)
