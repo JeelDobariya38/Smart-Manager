@@ -1,4 +1,4 @@
-class mockinput:
+class MockInputHandler:
     def __init__(self,input: list):
         self.inp = input
 
