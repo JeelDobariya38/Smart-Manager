@@ -1,0 +1,42 @@
+:root {
+    --primary-bg-color: #2d728f;
+    --primary-header-footer-bg-color: black;
+    --primary-text-color: white;
+    --secondary-text-color: #f5eea5;
+    --secondary-bg-color: #efbbe3
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--primary-bg-color);
+}
+
+a {
+    color: var(--secondary-text-color);
+    text-decoration: none;
+}
+
+header {
+    padding: 10px;
+    background-color: var(--primary-header-footer-bg-color);
+    color: var(--primary-text-color);
+}
+
+header h1 {
+    margin: 5px 0px;
+}
+
+section {
+    margin: 10px;
+}
+
+#platformDropdown, #downloadButton {
+    background-color: var(--secondary-text-color);
+}
+
+@media (max-width: 296px) {
+    html, body {
+        width: 296px;
+    }
+}
