@@ -17,19 +17,23 @@
     
     <section>
         <p>Welcome to the download page for Smart Manager. Select your platform and click the button below to download the latest release.</p>
-        <p>For specific release or vesion, vist your github repository's <a href="https://github.com/JeelDobariya38/smart-manager/releases">release page</a></p>
+        <p>For specific release or version, visit your GitHub repository's <a href="https://github.com/JeelDobariya38/smart-manager/releases">release page</a></p>
 
-        <label for="platformDropdown">Select Your Platform (select python if you want download the script files and run it, on any system that has python 3.12 or above installed it):</label>
+        <label for="platformDropdown">Select Your Platform:</label>
         <br>
-        <select id="platformDropdown">
-            <option value="windows">Windows</option>
+        <select id="platformDropdown" defaultValue="python">
             <option value="python">Python</option>
+            <option value="windows">Windows</option>
         </select>
         <button id="downloadButton">Download Latest Version</button>
 
         <div id="error_section" style="display: none;">
-            Error: error occured, in download please try again!
+            Error: an error occurred during download, please try again!
         </div>
+        
+        <p><strong>Important Note:</strong> If you are using Windows and your antivirus shows a warning after downloading the .exe file, don't worry. It's a false positive. Smart Manager is safe, and the warning is due to a technical aspect of its development.</p>
+        
+        <p><strong>Recommendation:</strong> We strongly recommend downloading the Python version, especially if you are familiar with Python. This ensures a smoother experience and avoids any false positive warnings. Simply select the "Python" option from the dropdown.</p>
     </section>
     
     <script src="scripts/download.js"></script>
