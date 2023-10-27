@@ -12,8 +12,10 @@ def main(inputhandler: InputHandler) -> None:
             print("Quitting the app...")
             return
         
-        if inp != "":
-            print("Invalid Input!!!")
+        if inp == "":
+            continue
+        
+        print("Invalid Input!!!")
 
 if __name__ == "__main__":
     init()
