@@ -1,3 +1,4 @@
+from app import commands
 from app.input_handler import InputHandler
 
 def init() -> None:
@@ -12,6 +13,10 @@ def main(inputhandler: InputHandler) -> None:
             print("Quitting the app...")
             return
         
+        if inp == "help":
+            commands.print_help_message()
+            continue
+
         if inp == "":
             continue
         
