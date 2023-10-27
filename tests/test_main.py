@@ -50,7 +50,7 @@ class TestMain:
         assert "Invalid Input!!!" in captured.out
 
     def test_main_help_msg(self, capfd):
-        message = ["helping"] 
+        message = [] 
         mock = MockInputHandler(["quit","help"])
         main(mock)
         captured = capfd.readouterr()
