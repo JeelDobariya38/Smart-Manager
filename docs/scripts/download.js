@@ -27,7 +27,7 @@ async function fetchLatestRelease() {
 
         if (response.ok) {
             const isWindows = is_on_windows();
-            const downloadURL = isWindows ? getWindowsDownloadURL(data.assets, data.tag_name) : getSourceCodeDownloadURL(data.assets);
+            const downloadURL = isWindows ? getWindowsDownloadURL(data.assets, data.tag_name) : getSourceCodeDownloadURL(data.assets, data.tag_name);
             console.log(downloadURL);
             window.location.href = downloadURL;
         } else {
@@ -41,14 +41,14 @@ async function fetchLatestRelease() {
 }
 
 function getWindowsDownloadURL(assets, version) {
-    const asset = assets.find(asset => asset.name.toLowerCase().includes(`smart-manager.${version}.zip`));
+    const asset = assets.find(asset => asset.name.toLowerCase().includes(`smart-manager.${version}.(windows).zip`));
     const path = asset ? asset.browser_download_url : '#';
     toggle_error_section(path);
     return path;
 }
 
-function getSourceCodeDownloadURL(assets) {
-    const asset = assets.find(asset => asset.name.toLowerCase().includes(`smart-manager.python.zip`));
+function getSourceCodeDownloadURL(assets, version) {
+    const asset = assets.find(asset => asset.name.toLowerCase().includes(`smart-manager.${version}.(python).zip`));
     const path = asset ? asset.browser_download_url : '#';
     toggle_error_section(path);
     return path;
