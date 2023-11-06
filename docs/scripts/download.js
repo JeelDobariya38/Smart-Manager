@@ -41,14 +41,14 @@ async function fetchLatestRelease() {
 }
 
 function getWindowsDownloadURL(assets, version) {
-    const asset = assets.find(asset => asset.name.toLowerCase().includes(`smart-manager.${version}.(windows).zip`));
+    const asset = assets.find(asset => asset.name.toLowerCase().includes(`smart-manager.${version}.windows.zip`));
     const path = asset ? asset.browser_download_url : '#';
     toggle_error_section(path);
     return path;
 }
 
 function getSourceCodeDownloadURL(assets, version) {
-    const asset = assets.find(asset => asset.name.toLowerCase().includes(`smart-manager.${version}.(python).zip`));
+    const asset = assets.find(asset => asset.name.toLowerCase().includes(`smart-manager.${version}.python.zip`));
     const path = asset ? asset.browser_download_url : '#';
     toggle_error_section(path);
     return path;
