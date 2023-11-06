@@ -31,9 +31,11 @@ async function fetchLatestRelease() {
             console.log(downloadURL);
             window.location.href = downloadURL;
         } else {
+            toggle_error_section('#');
             console.error('Failed to fetch latest release:', data.message);
         }
     } catch (error) {
+        toggle_error_section('#');
         console.error('Error fetching latest release:', error);
     }
 }
