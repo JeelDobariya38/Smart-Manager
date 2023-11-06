@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Manager | Home</title>
     <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="prism/prism.css">
+    <script src="prism/prism.js"></script>
 </head>
 <body>
     <header>
@@ -80,12 +82,11 @@
             <li>Create a Virtual Environment:
                 <ul>
                     <li>Open a terminal or command prompt in the root directory of the extracted source code.</li>
-                    <li>Create a virtual environment using the following command:
-                        <br><code>python -m venv venv</code></li>
+                    <li>Create a virtual environment using the following command: <pre class="lang-bash"><code>python -m venv venv</code></pre></li>
                     <li>Activate the virtual environment:
                         <ul>
-                            <li>On Windows: <code>.\venv\Scripts\activate</code></li>
-                            <li>On Unix or MacOS: <code>source venv/bin/activate</code></li>
+                            <li>On Windows: <pre><code class="lang-bash">.\venv\Scripts\activate</code></pre></li>
+                            <li>On Unix or MacOS: <pre><code class="lang-bash">source venv/bin/activate</code></pre></li>
                         </ul>
                     </li>
                 </ul>
@@ -93,15 +94,15 @@
             <li>Install Dependencies:
                 <ul>
                     <li>While in the virtual environment, install the project dependencies using:
-                        <br><code>pip install -r requirements.txt</code></li>
+                        <br><pre><code class="lang-bash">pip install -r requirements.txt</code></pre></li>
                 </ul>
             </li>
             <li>Run Smart Manager:
                 <ul>
                     <li>Navigate to the <code>src</code> directory in the terminal:
-                        <br><code>cd src</code></li>
+                        <br><pre><code class="lang-bash">cd src</code></pre></li>
                     <li>Run the main application file:
-                        <br><code>python main.py</code></li>
+                        <br><pre><code class="lang-bash">python main.py</code></pre></li>
                 </ul>
             </li>
         </ol>
