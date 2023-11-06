@@ -81,7 +81,11 @@ To get started with Smart Manager, follow these steps:
      ```
 
 6. **Run Smart Manager:**
-   - Navigate to the `src` directory in the terminal:
+   - Navigate to the `Smart-Manager` or `src` directory(based on which one is relevant) in the terminal:
+     ```bash
+     cd Smart-Manager
+     ```
+     Or
      ```bash
      cd src
      ```
