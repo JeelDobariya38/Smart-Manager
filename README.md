@@ -56,7 +56,7 @@ To get started with Smart Manager, follow these steps:
    - Extract the downloaded zip or tar file to the location where you want to store Smart Manager on your system.
 
 3. **Install Python:**
-   - Ensure you have Python 3.12 or above installed on your system. If not, you can download it from the [official Python website](https://www.python.org/downloads/).
+   - Ensure you have `Python 3.12` or above installed on your system. If not, you can download it from the [official Python website](https://www.python.org/downloads/).
 
 4. **Create a Virtual Environment:**
    - Open a terminal or command prompt in the root directory of the extracted source code.
