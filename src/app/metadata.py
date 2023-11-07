@@ -17,5 +17,9 @@ __RESOURCEDIR: list[str] = ["..", "..", "..", "resource"]
 DATADIR_PATH: str = os.path.join(__file__, os.path.sep.join(__DATADIR)) + os.path.sep
 RESOURCEDIR_PATH: str = os.path.join(__file__, os.path.sep.join(__RESOURCEDIR)) + os.path.sep
 
+# For .EXE files
+# DATADIR_PATH: str = os.path.join(__file__, os.path.sep.join(__DATADIR)) + os.path.sep
+# RESOURCEDIR_PATH: str = os.path.join(__file__, os.path.sep.join(__RESOURCEDIR)) + os.path.sep
+
 # App Configuration
 DATA_SEPARATOR: str = " -> "
