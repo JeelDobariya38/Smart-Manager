@@ -1,13 +1,12 @@
 from app import commands
-from app.input_handler import InputHandler
 
 def init() -> None:
     print("Welcome to Smart Manager Application")
     print()
 
-def main(inputhandler: InputHandler) -> None:
+def main() -> None:
     while True:
-        inp = inputhandler.input(">> ").strip().lower()
+        inp = input(">> ").strip().lower()
         
         if inp == "":
             continue
@@ -29,4 +28,4 @@ def main(inputhandler: InputHandler) -> None:
 
 if __name__ == "__main__":
     init()
-    main(InputHandler())
+    main()
