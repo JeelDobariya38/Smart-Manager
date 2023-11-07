@@ -17,11 +17,11 @@ __RESOURCEDIR: List[str] = ["..", "..", "..", "resource"]
 datadir_str = os.path.sep.join(__DATADIR)
 resourcedir_str = os.path.sep.join(__RESOURCEDIR)
 
-## For .Py Scripts
+# For .Py Scripts
 DATADIR_PATH: str = os.path.join(__file__, datadir_str) + os.path.sep
 RESOURCEDIR_PATH: str = os.path.join(__file__, resourcedir_str) + os.path.sep
 
-## For .EXE files
+# For .EXE files
 # DATADIR_PATH: str = os.path.join(__file__, datadir_str) + os.path.sep
 # RESOURCEDIR_PATH: str = os.path.join(__file__, resourcedir_str) + os.path.sep
 
