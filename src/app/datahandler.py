@@ -9,7 +9,7 @@ def save_data(website: str, password: str) -> None:
     with open(DATA_FILE, "a") as f:
         f.write(data + '\n')
 
-def load_data() -> List[str]:
+def load_data() -> List[list[str]]:
     data_list = []
     with open(DATA_FILE) as f:
         data = f.read()
