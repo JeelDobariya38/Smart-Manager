@@ -1,4 +1,4 @@
-"""CHANGES IN THIS FILE CAN LEAD TO ADVERSE EFFECTS AND CAN EVEN CRASH THE APPLICATION"""
+"""CHANGES IN THIS FILE CAN LEAD TO ADVERSE EFFECTS AND CAN EVEN CRASH THE APPLICATION"""  # noqa: E501
 
 import os
 from typing import List
@@ -14,12 +14,15 @@ __DATADIR: List[str] = ["..", "..", "..", "data"]
 __RESOURCEDIR: List[str] = ["..", "..", "..", "resource"]
 
 # FilePath (Do Not Change this session, instead change above "Paths" session)
-DATADIR_PATH: str = os.path.join(__file__, os.path.sep.join(__DATADIR)) + os.path.sep
-RESOURCEDIR_PATH: str = os.path.join(__file__, os.path.sep.join(__RESOURCEDIR)) + os.path.sep
+datadir_str = os.path.sep.join(__DATADIR)
+resourcedir_str = os.path.sep.join(__RESOURCEDIR)
+
+DATADIR_PATH: str = os.path.join(__file__, datadir_str) + os.path.sep
+RESOURCEDIR_PATH: str = os.path.join(__file__, resourcedir_str) + os.path.sep
 
 # For .EXE files
-# DATADIR_PATH: str = os.path.join(__file__, os.path.sep.join(__DATADIR)) + os.path.sep
-# RESOURCEDIR_PATH: str = os.path.join(__file__, os.path.sep.join(__RESOURCEDIR)) + os.path.sep
+# DATADIR_PATH: str = os.path.join(__file__, datadir_str) + os.path.sep
+# RESOURCEDIR_PATH: str = os.path.join(__file__, resourcedir_str) + os.path.sep
 
 # App Configuration
 DATA_SEPARATOR: str = " -> "

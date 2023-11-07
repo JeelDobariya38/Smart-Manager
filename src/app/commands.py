@@ -9,8 +9,8 @@ def quit_appplication() -> None:
 def print_help_message() -> None:
     print("Here are valid commands:")
     print(" - \"quit\" or \"exit\": for quiting the app")
-    print(" - \"read\" or \"load\": for reading or loading the existing passwords")
-    print(" - \"write\" or \"save\": for writing or saveing the new passwords")
+    print(" - \"read\" or \"load\": for reading the existing passwords")
+    print(" - \"write\" or \"save\": for writing the new passwords")
     print()
 
 
