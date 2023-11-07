@@ -23,7 +23,7 @@ def read_password() -> None:
     try:
         for data_item in data_list:
             print(f"{data_item[0]} - {data_item[1]}")
-            print()
+        print()
     except IndexError as _:
         raise Exception("data is corrupted!!")
 
