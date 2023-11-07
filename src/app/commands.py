@@ -1,3 +1,6 @@
+def quit_appplication():
+    print("Quiting the Application....")
+
 def print_help_message():
     print("Here are valid commands:")
     print(" - \"quit\" or \"exit\": for quiting the app")
@@ -5,9 +8,12 @@ def print_help_message():
     print(" - \"write\" or \"save\": for writing or saveing the new passwords")
     print()
 
-def writepassword():
+def write_password():
     website = input("Enter a website: ")
     pasword = input("Enter a password: ")
     print(website + " -> " + pasword)
     print("operation successfull!!!")
     print()
+
+def read_password():
+    pass

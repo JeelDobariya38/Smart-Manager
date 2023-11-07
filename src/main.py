@@ -1,5 +1,9 @@
 import app
 
 if __name__ == "__main__":
-    app.init()
-    app.main()
+    try:
+        app.init()
+        app.main()
+    except Exception as e:
+        print("Error Occured!!!\n")
+        print(e)

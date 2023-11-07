@@ -1,4 +1,4 @@
-from . import commands
+from . import eventhandler
 
 def init() -> None:
     print("Welcome to Smart Manager Application")
@@ -12,15 +12,19 @@ def main() -> None:
             continue
 
         if inp == "quit" or inp == "exit":
-            print("Quitting the app...")
+            eventhandler.handle_quit_event()
             return
         
         if inp == "help":
-            commands.print_help_message()
+            eventhandler.handle_help_event()
             continue
 
         if inp in ["write", "save"]:
-            commands.writepassword()
+            eventhandler.handle_write_password_event()
+            continue
+
+        if inp in ["read", "load"]:
+            eventhandler.handle_read_password_event()
             continue
         
         print("Invalid Input!!!")
