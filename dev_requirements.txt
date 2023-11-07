@@ -1,3 +1,4 @@
 pytest
 coverage
 mypy
+flake8

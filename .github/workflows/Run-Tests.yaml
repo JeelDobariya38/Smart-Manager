@@ -27,11 +27,15 @@ jobs:
         pip install -r requirements.txt
         pip install -r dev_requirements.txt
 
-    - name: Run mypy
+    - name: Run MyPy
       run: |
         python -m mypy src
+    
+    - name: Run Flake8
+      run: |
+        flake8 src
 
-    - name: Run pytest
+    - name: Run Pytest
       run: |
         coverage run -m pytest
         coverage report
