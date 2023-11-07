@@ -9,6 +9,9 @@ def main(inputhandler: InputHandler) -> None:
     while True:
         inp = inputhandler.input(">> ").strip().lower()
         
+        if inp == "":
+            continue
+
         if inp == "quit" or inp == "exit":
             print("Quitting the app...")
             return
@@ -17,10 +20,12 @@ def main(inputhandler: InputHandler) -> None:
             commands.print_help_message()
             continue
 
-        if inp == "":
+        if inp in ["write", "save"]:
+            commands.writepassword()
             continue
         
         print("Invalid Input!!!")
+        print()
 
 if __name__ == "__main__":
     init()
