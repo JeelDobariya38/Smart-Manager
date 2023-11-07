@@ -1,3 +1,4 @@
+from . import datahandler
 from . import metadata
 
 def quit_appplication():
@@ -12,13 +13,18 @@ def print_help_message():
 
 def write_password():
     website = input("Enter a website: ")
-    pasword = input("Enter a password: ")
-    print(website + " -> " + pasword)
+    password = input("Enter a password: ")
+    datahandler.save_data(website, password)
     print("operation successfull!!!")
     print()
 
 def read_password():
-    pass
+    data_list = datahandler.load_data()
+    try:
+        for data_item in data_list:
+            print(f"{data_item[0]} - {data_item[1]}")
+    except IndexError as _:
+        raise Exception("data is corrupted!!")
 
 def read_info():
     path = metadata.RESOURCEDIR_PATH + "info.txt"
