@@ -15,6 +15,3 @@ __RESOURCEDIR = ["..", "..", "..", "resource"]
 # FilePath (Do Not Change this session, instead change above "Paths" session)
 DATADIR_PATH = os.path.join(__file__, os.path.sep.join(__DATADIR)) + os.path.sep
 RESOURCEDIR_PATH = os.path.join(__file__, os.path.sep.join(__RESOURCEDIR)) + os.path.sep
-
-print(DATADIR_PATH + "\n" + RESOURCEDIR_PATH)
-open(DATADIR_PATH + "abc.txt").close()

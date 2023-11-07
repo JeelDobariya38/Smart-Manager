@@ -1,3 +1,5 @@
+from . import metadata
+
 def quit_appplication():
     print("Quiting the Application....")
 
@@ -17,3 +19,9 @@ def write_password():
 
 def read_password():
     pass
+
+def read_info():
+    path = metadata.RESOURCEDIR_PATH + "info.txt"
+    with open(path) as f:
+        data = f.read()
+    print(data)

@@ -21,6 +21,10 @@ def main() -> None:
             eventhandler.handle_quit_event()
             return
         
+        if inp == "info":
+            eventhandler.handle_info_event()
+            continue
+
         if inp == "help":
             eventhandler.handle_help_event()
             continue

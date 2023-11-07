@@ -11,3 +11,6 @@ def handle_write_password_event():
 
 def handle_read_password_event():
     commands.read_password()
+
+def handle_info_event():
+    commands.read_info()
