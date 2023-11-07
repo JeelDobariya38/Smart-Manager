@@ -1,6 +1,12 @@
 from . import eventhandler
+from . import metadata
+
+import os
 
 def init() -> None:
+    if not os.path.exists(metadata.DATADIR_PATH):
+        os.makedirs(metadata.DATADIR_PATH)
+    
     print("Welcome to Smart Manager Application")
     print()
 
