@@ -1,5 +1,4 @@
-# # Tests/conftest.py
-
+# conftest.py
 import sys
 import os
 
@@ -10,3 +9,4 @@ project_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '../src'))
 if project_dir not in sys.path:
     sys.path.insert(0, project_dir)
     sys.path.insert(1,os.path.dirname(__file__))
+    print("Resolveing Paths......")
