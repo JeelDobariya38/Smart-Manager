@@ -4,6 +4,7 @@ import sys
 
 ISDEBUGGING = False
 
+
 def main():
     try:
         app.init()
@@ -12,9 +13,11 @@ def main():
         print("Error Occured!!!\n")
         print(e)
 
+
 def debug():
     app.init()
     app.main()
+
 
 if __name__ == "__main__":
     if len(sys.argv) >= 2:

@@ -10,8 +10,8 @@ WEBSITE: str = "https://jeeldobariya38.github.io/Smart-Manager/"
 REPO: str = "https://github.com/JeelDobariya38/Smart-Manager"
 
 # Paths (all path are relative to this file)
-__DATADIR: list[str] = ["..", "..", "..", "data"]
-__RESOURCEDIR: list[str] = ["..", "..", "..", "resource"]
+__DATADIR: List[str] = ["..", "..", "..", "data"]
+__RESOURCEDIR: List[str] = ["..", "..", "..", "resource"]
 
 # FilePath (Do Not Change this session, instead change above "Paths" session)
 DATADIR_PATH: str = os.path.join(__file__, os.path.sep.join(__DATADIR)) + os.path.sep
