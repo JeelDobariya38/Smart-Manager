@@ -21,8 +21,14 @@ def write_password() -> None:
 def read_password() -> None:
     data_list = datahandler.load_data()
     try:
+        if len(data_list) == 0:
+            print("No Passwords to Show")
+            print()
+            return
+
         for data_item in data_list:
             print(f"{data_item[0]} - {data_item[1]}")
+        
         print()
     except IndexError as _:
         raise Exception("data is corrupted!!")

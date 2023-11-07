@@ -11,8 +11,13 @@ def save_data(website: str, password: str) -> None:
 
 def load_data() -> List[list[str]]:
     data_list = []
-    with open(DATA_FILE) as f:
-        data = f.read()
-        for dataitem in data.split("\n"):
-            data_list.append(dataitem.split(metadata.DATA_SEPARATOR))
-    return data_list[:-1]
+    try:
+        with open(DATA_FILE) as f:
+            data = f.read()
+            if data ==  "":
+                return []
+            for dataitem in data.split("\n"):
+                data_list.append(dataitem.split(metadata.DATA_SEPARATOR))
+        return data_list[:-1]
+    except FileNotFoundError as _:
+        return []
