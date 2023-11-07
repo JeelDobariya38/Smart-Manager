@@ -41,7 +41,7 @@ class TestMain:
         mock = MockInputHandler(["quit","",""])
         main(mock)
         captured = capfd.readouterr()
-        assert ">>\n>>\nQuitting the app..." in captured.out
+        assert ">> \n>> \nQuitting the app..." in captured.out
 
     def test_main_invalid_command(self, capfd) -> None:
         mock = MockInputHandler(["quit","","invalid"])

@@ -7,7 +7,7 @@ def init() -> None:
 
 def main(inputhandler: InputHandler) -> None:
     while True:
-        inp = inputhandler.input(">>").strip().lower()
+        inp = inputhandler.input(">> ").strip().lower()
         
         if inp == "quit" or inp == "exit":
             print("Quitting the app...")
