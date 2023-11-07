@@ -1,6 +1,6 @@
-from main import init, main
+import app
 
 def test_init(capfd):
-    init()
+    app.init()
     captured = capfd.readouterr()
     assert "Welcome to Smart Manager Application" in captured.out
