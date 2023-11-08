@@ -17,7 +17,7 @@ def init() -> None:
 def main() -> None:
     while True:
         inp = input(">> ").strip().lower()
-        
+
         if inp == "":
             continue
 
