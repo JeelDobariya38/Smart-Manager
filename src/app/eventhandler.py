@@ -1,4 +1,4 @@
-from . import commands
+from app import commands
 
 
 def handle_quit_event() -> None:

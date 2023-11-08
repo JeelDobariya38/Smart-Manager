@@ -1,4 +1,4 @@
-from . import metadata
+from app import metadata
 
 from typing import List
 

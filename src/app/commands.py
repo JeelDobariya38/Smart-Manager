@@ -1,8 +1,7 @@
 from pydevtools.output import output
 
-from . import datahandler
-from . import metadata
-
+from datahandler import datahandler
+from app import metadata
 
 def quit_appplication() -> None:
     print("Quiting the Application....")

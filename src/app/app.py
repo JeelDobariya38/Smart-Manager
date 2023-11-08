@@ -1,7 +1,7 @@
 from pydevtools.output import output
 
-from . import eventhandler
-from . import metadata
+from app import eventhandler
+from app import metadata
 
 import os
 
