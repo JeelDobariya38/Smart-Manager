@@ -5,7 +5,7 @@ from typing import List
 
 # App
 NAME: str = "Smart Manager"
-VERSION: str = "0.1.0-alpha"
+VERSION: str = "1.1.0"
 WEBSITE: str = "https://jeeldobariya38.github.io/Smart-Manager/"
 REPO: str = "https://github.com/JeelDobariya38/Smart-Manager"
 

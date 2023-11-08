@@ -1,3 +1,5 @@
+from pydevtools.output import output
+
 from . import datahandler
 from . import metadata
 
@@ -18,7 +20,7 @@ def write_password() -> None:
     website = input("Enter a website: ")
     password = input("Enter a password: ")
     datahandler.save_data(website, password)
-    print("operation successfull!!!")
+    output.print_output("saved successfull!!!", "green")
     print()
 
 
@@ -26,7 +28,7 @@ def read_password() -> None:
     data_list = datahandler.load_data()
     try:
         if len(data_list) == 0:
-            print("No Passwords to Show")
+            output.print_warning("No Passwords to Show....")
             print()
             return
 

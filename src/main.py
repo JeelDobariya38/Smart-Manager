@@ -1,3 +1,5 @@
+from pydevtools.output import output
+
 import app
 
 import sys
@@ -10,8 +12,8 @@ def main():
         app.init()
         app.main()
     except Exception as e:
-        print("Error Occured!!!\n")
-        print(e)
+        output.print_error(e)
+        input()
 
 
 def debug():

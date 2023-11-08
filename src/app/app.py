@@ -1,3 +1,5 @@
+from pydevtools.output import output
+
 from . import eventhandler
 from . import metadata
 
@@ -39,5 +41,5 @@ def main() -> None:
             eventhandler.handle_read_password_event()
             continue
 
-        print("Invalid Input!!!")
+        output.print_warning("Invalid Input!!!")
         print()
