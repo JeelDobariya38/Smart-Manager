@@ -27,3 +27,6 @@ RESOURCEDIR_PATH: str = os.path.join(__file__, resourcedir_str) + os.path.sep
 
 # App Configuration
 DATA_SEPARATOR: str = " -> "
+
+if __name__ == "__main__":
+    input("This script is not intended to be run directly. Please run 'main.py' to start the application.")

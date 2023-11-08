@@ -19,3 +19,7 @@ def handle_read_password_event() -> None:
 
 def handle_info_event() -> None:
     commands.read_info()
+
+
+if __name__ == "__main__":
+    input("This script is not intended to be run directly. Please run 'main.py' to start the application.")

@@ -23,3 +23,7 @@ def load_data() -> List[list[str]]:
         return data_list[:-1]
     except FileNotFoundError as _:  # noqa: F841
         return []
+
+
+if __name__ == "__main__":
+    input("This script is not intended to be run directly. Please run 'main.py' to start the application.")
