@@ -12,7 +12,7 @@ if __name__ == "__main__":
 
 # App
 NAME: str = "Smart Manager"
-VERSION: str = "1.1.0"
+VERSION: str = "v2.0.0-Beta"
 WEBSITE: str = "https://jeeldobariya38.github.io/Smart-Manager/"
 REPO: str = "https://github.com/JeelDobariya38/Smart-Manager"
 
@@ -21,8 +21,8 @@ __DATADIR: List[str] = ["..", "..", "..", "data"]
 __RESOURCEDIR: List[str] = ["..", "..", "..", "resource"]
 
 # FilePath (Do Not Change this session, instead change above "Paths" session)
-datadir_str = os.path.sep.join(__DATADIR)
-resourcedir_str = os.path.sep.join(__RESOURCEDIR)
+datadir_str: str = os.path.sep.join(__DATADIR)
+resourcedir_str: str = os.path.sep.join(__RESOURCEDIR)
 
 # For .Py Scripts
 DATADIR_PATH: str = os.path.join(__file__, datadir_str) + os.path.sep

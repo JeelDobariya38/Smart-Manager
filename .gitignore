@@ -1,5 +1,6 @@
 # App specfic
 data/
+versions/
 
 # Byte-compiled
 __pycache__/
