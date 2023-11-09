@@ -1,18 +1,18 @@
 # Contributing to Smart Manager
 
-Welcome to Smart Manager! We appreciate your interest in contributing.
+Welcome to the Smart Manager project! We greatly value your interest in contributing to this endeavor.
 
 ## How to Contribute
 
-1. **Fork the repository:** Click on the "Fork" button on the top right corner of the repository page. This creates a copy of the repository in your GitHub account.
+1. **Fork the Repository:** Begin by clicking the "Fork" button located in the upper right corner of the repository's page. This action creates a duplicate of the repository within your GitHub account.
 
-2. **Clone your fork:** Clone the forked repository to your local machine. Replace `YourUsername` with your GitHub username:
+2. **Clone Your Fork:** Clone the forked repository to your local machine. Replace `YourUsername` with your GitHub username:
 
    ```bash
    git clone https://github.com/YourUsername/Smart_Manager.git
    ```
 
-3. **Create a new branch:** Create a new branch for your changes:
+3. **Create a New Branch:** Create a new branch for your contributions:
 
    ```bash
    git checkout -b feature/your-feature-name
@@ -20,37 +20,37 @@ Welcome to Smart Manager! We appreciate your interest in contributing.
 
 4. **Make your changes:** Implement your feature or fix.
 
-5. **Test your changes:** Ensure your changes do not break existing functionality. If applicable, add relevant tests to cover your changes.
+5. **Test Your Changes:** Ensure that your modifications do not disrupt current functionality. If applicable, add pertinent tests to cover your changes.
 
-6. **Commit your changes:** Commit your changes with a descriptive message:
+6. **Commit Your Changes:** Commit your changes along with a descriptive message:
 
    ```bash
    git commit -m 'Add your feature'
    ```
 
-7. **Push to your branch:** Push your changes to your GitHub repository:
+7. **Push to Your Branch:** Push your changes to your GitHub repository:
 
    ```bash
    git push origin feature/your-feature-name
    ```
 
-8. **Submit a pull request:** On the GitHub page of your fork, create a pull request. Provide details about your changes and submit the pull request.
+8. **Submit a Pull Request:** On the GitHub page of your fork, create a pull request. Provide comprehensive details about your changes and proceed to submit the pull request.
 
 ## Reporting Issues
 
-If you encounter any issues or have suggestions, please [create an issue](https://github.com/JeelDobariya38/Smart-Manager/issues) on GitHub. Ensure to provide detailed information about the problem and steps to reproduce it.
+If you come across any issues or have suggestions for improvement, kindly [create an issue](https://github.com/JeelDobariya38/Smart-Manager/issues) on GitHub. Ensure to provide meticulous information about the problem and steps to reproduce it.
 
 ## Code Style
 
-Follow the code style used in the project. Use consistent indentation and formatting. If you are unsure, refer to the existing codebase.
+Maintain consistency with the code style employed in the project, including uniform indentation and formatting. When in doubt, refer to the existing codebase for guidance.
 
 ## Code of Conduct
 
-Please note that this project follows a [Code of Conduct](CODE_OF_CONDUCT.md). By participating, you agree to uphold this code.
+Please be mindful that this project adheres to a [Code of Conduct](CODE_OF_CONDUCT.md). By participating, you agree to uphold these principles.
 
 ## Running the Smart Manager App Locally
 
-To run the Smart Manager app locally, use the provided Python script. Make sure you have Python installed and you are at the root of repository, then execute:
+To run the Smart Manager app on your local environment, employ the provided Python script. Ensure Python is installed and that you are in the repository's root directory, then execute:
 
 ```bash
 python src/main.py
@@ -58,11 +58,11 @@ python src/main.py
 
 ## Contributing Code
 
-If you wish to contribute code, make sure to follow the coding conventions and include relevant tests.
+For code contributions, adhere to the coding conventions and encompass relevant tests.
 
 ### Example Code
 
-Below is an example Python script. Feel free to provide your feedback or contribute to give repository a better styling:
+Here is an example Python script. Feel free to provide your feedback or contribute to enhance the repository's style:
 
 ```python
 def greet(name: str) -> None:
@@ -85,29 +85,27 @@ if __name__ == "__main__":
 
 ```
 
-**Here are some key elements that you can remember while coding in this codebase**
+**Notable Code Elements for Reference**
 
 1. **Indentation:**
-   - The code uses 4 spaces for indentation, which is a common and widely accepted convention in Python. Stick to this for consistency.
+   - Consistently use 4 spaces for indentation, a widely accepted convention in Python, to maintain uniformity.
 
 2. **Whitespace:**
-   - The code has consistent spacing around operators and after commas, which is good. Continue to maintain this consistency.
+   - Ensure consistency in spacing around operators and after commas, as observed in the existing codebase.
 
 3. **Imports:**
-   - The imports are organized and follow the standard Python style. Make sure to group your imports and have a clear separation between standard library imports and third-party imports.
-   
-   - third-part imports should be on the top that a balk line and the other built in module should imported.
+   - Organize imports and follow the standard Python style. Group third-party imports at the top, preceded by a blank line, followed by built-in module imports.
 
 4. **Function and Method Naming:**
-   - Function and method names are in lowercase with words separated by underscores (`snake_case`), which is the recommended convention in Python.
+   - Keep function and method names in lowercase with words separated by underscores (`snake_case`), in adherence to Python's recommended convention.
 
 5. **Use of Type Hints:**
-   - Good use of type hints! Continue to provide type hints for function arguments and return types, as this enhances code readability.
+   - Continue using type hints for function arguments and return types to enhance code clarity and maintain readability.
 
-Remember, these are general guidelines, and the most important thing is to maintain consistency within the codebase.
+Remember, these guidelines are flexible, with the primary emphasis on maintaining consistency within the codebase.
 
 ## Feature Suggestions
 
-If you have ideas for new features or improvements, please feel free to discuss them in the [GitHub Discussions](https://github.com/JeelDobariya38/Smart-Manager/discussions) section.
+Should you possess ideas for new features or improvements, we encourage you to discuss them in the [GitHub Discussions](https://github.com/JeelDobariya38/Smart-Manager/discussions) section.
 
-Thank you for contributing to Smart Manager!
+Thank you for your valuable contributions to Smart Manager!
