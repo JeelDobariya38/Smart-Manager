@@ -1,5 +1,5 @@
 NAME    ->  Smart Manager
-VERSION ->  1.1.0
+VERSION ->  1.1.0-Beta
 WEBSITE ->  https://jeeldobariya38.github.io/Smart-Manager/
 REPO    ->  https://github.com/JeelDobariya38/Smart-Manager/
 AUTHOR  ->  Jeel Dobariya
