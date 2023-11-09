@@ -1,5 +1,4 @@
-from .app import init
-from .app import main
+from . import datahandler
 
 
 if __name__ == "__main__":

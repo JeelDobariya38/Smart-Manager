@@ -1,9 +1,15 @@
 from pydevtools.output import output
 
-from . import eventhandler
-from . import metadata
+from app import eventhandler
+from app import metadata
 
 import os
+
+
+if __name__ == "__main__":
+    print("This script is not intended for direct execution,")
+    input("Please use 'main.py' to launch the application.")
+    quit()
 
 
 def init() -> None:

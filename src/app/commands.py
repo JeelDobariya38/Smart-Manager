@@ -1,7 +1,13 @@
 from pydevtools.output import output
 
-from . import datahandler
-from . import metadata
+from datahandler import datahandler
+from app import metadata
+
+
+if __name__ == "__main__":
+    print("This script is not intended for direct execution,")
+    input("Please use 'main.py' to launch the application.")
+    quit()
 
 
 def quit_appplication() -> None:
@@ -19,6 +25,9 @@ def print_help_message() -> None:
 def write_password() -> None:
     website = input("Enter a website: ")
     password = input("Enter a password: ")
+    if website == "" and password == "":
+        output.print_error("website or password can't be empty")
+        return None
     datahandler.save_data(website, password)
     output.print_output("saved successfull!!!", "green")
     print()

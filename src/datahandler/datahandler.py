@@ -1,8 +1,13 @@
-from . import metadata
+from app import metadata
 
 from typing import List
 
 DATA_FILE: str = metadata.DATADIR_PATH + "data.txt"
+
+if __name__ == "__main__":
+    print("This script is not intended for direct execution,")
+    input("Please use 'main.py' to launch the application.")
+    quit()
 
 
 def save_data(website: str, password: str) -> None:
