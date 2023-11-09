@@ -3,4 +3,6 @@ from .app import main
 
 
 if __name__ == "__main__":
-    input("This script is not intended to be run directly. Please run 'main.py' to start the application.")
+    print("This script is not intended for direct execution,")
+    input("Please use 'main.py' to launch the application.")
+    quit()

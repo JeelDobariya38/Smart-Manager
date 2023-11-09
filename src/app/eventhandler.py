@@ -1,6 +1,12 @@
 from app import commands
 
 
+if __name__ == "__main__":
+    print("This script is not intended for direct execution,")
+    input("Please use 'main.py' to launch the application.")
+    quit()
+
+
 def handle_quit_event() -> None:
     commands.quit_appplication()
 
@@ -19,7 +25,3 @@ def handle_read_password_event() -> None:
 
 def handle_info_event() -> None:
     commands.read_info()
-
-
-if __name__ == "__main__":
-    input("This script is not intended to be run directly. Please run 'main.py' to start the application.")

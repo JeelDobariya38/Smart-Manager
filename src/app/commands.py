@@ -3,6 +3,13 @@ from pydevtools.output import output
 from datahandler import datahandler
 from app import metadata
 
+
+if __name__ == "__main__":
+    print("This script is not intended for direct execution,")
+    input("Please use 'main.py' to launch the application.")
+    quit()
+
+
 def quit_appplication() -> None:
     print("Quiting the Application....")
 
@@ -47,7 +54,3 @@ def read_info() -> None:
     with open(path) as f:
         data = f.read()
     print(data)
-
-
-if __name__ == "__main__":
-    input("This script is not intended to be run directly. Please run 'main.py' to start the application.")

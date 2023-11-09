@@ -4,6 +4,11 @@ from typing import List
 
 DATA_FILE: str = metadata.DATADIR_PATH + "data.txt"
 
+if __name__ == "__main__":
+    print("This script is not intended for direct execution,")
+    input("Please use 'main.py' to launch the application.")
+    quit()
+
 
 def save_data(website: str, password: str) -> None:
     data = metadata.DATA_SEPARATOR.join([website, password])
@@ -23,7 +28,3 @@ def load_data() -> List[list[str]]:
         return data_list[:-1]
     except FileNotFoundError as _:  # noqa: F841
         return []
-
-
-if __name__ == "__main__":
-    input("This script is not intended to be run directly. Please run 'main.py' to start the application.")

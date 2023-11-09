@@ -15,7 +15,8 @@ We strongly recommend the inclusion of the following code snippet at the beginni
 
 
 if __name__ == "__main__":
-    input("This script is not intended for direct execution, Please use 'main.py' to launch the application.")
+    print("This script is not intended for direct execution,")
+    input("Please use 'main.py' to launch the application.")
     quit()
 
 

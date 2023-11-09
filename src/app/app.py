@@ -6,6 +6,12 @@ from app import metadata
 import os
 
 
+if __name__ == "__main__":
+    print("This script is not intended for direct execution,")
+    input("Please use 'main.py' to launch the application.")
+    quit()
+
+
 def init() -> None:
     if not os.path.exists(metadata.DATADIR_PATH):
         os.makedirs(metadata.DATADIR_PATH)
@@ -43,7 +49,3 @@ def main() -> None:
 
         output.print_warning("Invalid Input!!!")
         print()
-
-
-if __name__ == "__main__":
-    input("This script is not intended to be run directly. Please run 'main.py' to start the application.")
