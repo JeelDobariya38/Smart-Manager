@@ -38,7 +38,7 @@ Welcome to Smart Manager! We appreciate your interest in contributing.
 
 ## Reporting Issues
 
-If you encounter any issues or have suggestions, please [create an issue](https://github.com/JeelDobariya38/smart-manager/issues) on GitHub. Ensure to provide detailed information about the problem and steps to reproduce it.
+If you encounter any issues or have suggestions, please [create an issue](https://github.com/JeelDobariya38/Smart-Manager/issues) on GitHub. Ensure to provide detailed information about the problem and steps to reproduce it.
 
 ## Code Style
 
@@ -108,6 +108,6 @@ Remember, these are general guidelines, and the most important thing is to maint
 
 ## Feature Suggestions
 
-If you have ideas for new features or improvements, please feel free to discuss them in the [GitHub Discussions](https://github.com/JeelDobariya38/smart-manager/discussions) section.
+If you have ideas for new features or improvements, please feel free to discuss them in the [GitHub Discussions](https://github.com/JeelDobariya38/Smart-Manager/discussions) section.
 
 Thank you for contributing to Smart Manager!
