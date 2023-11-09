@@ -12,7 +12,7 @@ if __name__ == "__main__":
 
 # App
 NAME: str = "Smart Manager"
-VERSION: str = "1.1.0-Beta"
+VERSION: str = "v2.0.0-Beta"
 WEBSITE: str = "https://jeeldobariya38.github.io/Smart-Manager/"
 REPO: str = "https://github.com/JeelDobariya38/Smart-Manager"
 
