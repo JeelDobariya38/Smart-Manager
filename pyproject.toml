@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "Smart-Manager"
+version = "2.0.0-Beta"
+description = "Smart Manager is a Python command-line application designed to securely store and manage passwords and authentication-related data."
+authors = ["Jeel Dobariya <dobariyaj34@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pydevtools = {git = "https://github.com/JeelDobariya38/PyDevTools.git", rev = "v1.1.1"}
+
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^6.1.0"
+coverage = "^7.3.2"
+mypy = "^1.6.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
