@@ -556,6 +556,17 @@ reference = "v1.1.1"
 resolved_reference = "cc4f7fa14f608e47abb66db22d8db1dec8fb89db"
 
 [[package]]
+name = "pyfilehandling"
+version = "3.2.0"
+description = "A Python package for file manipulation operations."
+optional = false
+python-versions = ">=3.9,<4.0"
+files = [
+    {file = "pyfilehandling-3.2.0-py3-none-any.whl", hash = "sha256:677d6ac48cb9557faf8c382d026d094ecf2416367fa956f59c937a075c0ddf2b"},
+    {file = "pyfilehandling-3.2.0.tar.gz", hash = "sha256:e2a199e4ef8ddc4a040c405bd6e9fc8dc42849168c1fa21f68a010f3799ba2d3"},
+]
+
+[[package]]
 name = "pyflakes"
 version = "3.1.0"
 description = "passive checker of Python programs"
@@ -768,4 +779,4 @@ testing = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 [metadata]
 lock-version = "2.0"
 python-versions = "3.12"
-content-hash = "7540b3b6831f05f82cba0394a903578df965ca29c9e8301beb0db286b2758ad5"
+content-hash = "3b3d0ee0319eed690a0d8b2752d560a98a2596634a1dbf7a3d0013cbbae65db8"
