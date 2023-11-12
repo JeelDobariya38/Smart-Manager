@@ -1,3 +1,5 @@
+from pyfilehandling import fileio
+
 from app import metadata
 
 from typing import List
@@ -12,19 +14,17 @@ if __name__ == "__main__":
 
 def save_data(website: str, password: str) -> None:
     data = metadata.DATA_SEPARATOR.join([website, password])
-    with open(DATA_FILE, "a") as f:
-        f.write(data + '\n')
+    fileio.writeline(DATA_FILE, data)
 
 
 def load_data() -> List[list[str]]:
     data_list = []
     try:
-        with open(DATA_FILE) as f:
-            data = f.read()
-            if data == "":
-                return []
-            for dataitem in data.split("\n"):
-                data_list.append(dataitem.split(metadata.DATA_SEPARATOR))
+        data = fileio.read(DATA_FILE)
+        if data == "":
+            return []
+        for dataitem in data.split("\n"):
+            data_list.append(dataitem.split(metadata.DATA_SEPARATOR))
         return data_list[:-1]
     except FileNotFoundError as _:  # noqa: F841
         return []

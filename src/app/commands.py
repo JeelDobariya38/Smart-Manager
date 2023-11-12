@@ -1,4 +1,5 @@
 from pydevtools.output import output
+from pyfilehandling import fileio
 
 from datahandler import datahandler
 from app import metadata
@@ -51,6 +52,5 @@ def read_password() -> None:
 
 def read_info() -> None:
     path = metadata.RESOURCEDIR_PATH + "info.txt"
-    with open(path) as f:
-        data = f.read()
+    data = fileio.read(path)
     print(data)
