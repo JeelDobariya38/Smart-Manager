@@ -1,4 +1,6 @@
-/* <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/2.0.3/marked.min.js"></script> */
+/* requires <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/2.0.3/marked.min.js"></script> */
+/* requires <script src="{root-of-repo}/docs/scripts/linkbreaker.js"></script> */
+// Note: Below code assume that the asset for windows attach to release will have nameing patten as `smart-manager.${release.tag}.${platform}.zip`
 
 document.addEventListener("DOMContentLoaded", function () {
     // Ensure marked.js is loaded
@@ -18,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             for (var release of releases) {
                 if (!release.draft) {
-                    var convertedBody = marked(release.body);
+                    var convertedBody = marked(release.body); // <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/2.0.3/marked.min.js"></script>
                     var pythondownloadlink = '#';
                     var windowsdownloadlink = '#';
                     for (var asset of release.assets) {
@@ -52,6 +54,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 const errorMsg = document.querySelector('.other-version .error-msg');
                 errorMsg.style.display = 'block';
             }
+
+            addWbrToLinks(); // <script src="{root-of-repo}/docs/scripts/linkbreaker.js"></script>
         })
         .catch(error => console.error("Error fetching latest release:", error));
 });

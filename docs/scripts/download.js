@@ -1,4 +1,4 @@
-// Note: Below code assume that the asset for windows attach to release will have nameing patten as `smart-manager.${release.tag}.zip`
+// Note: Below code assume that the asset for windows attach to release will have nameing patten as `smart-manager.${release.tag}.${platform}.zip`.
 
 const apiEndpoint = 'https://api.github.com/repos/JeelDobariya38/smart-manager/releases/latest';
 
