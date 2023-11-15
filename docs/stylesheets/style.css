@@ -32,7 +32,21 @@ section {
 }
 
 #platformDropdown, #downloadButton {
-    background-color: var(--secondary-text-color);
+    background-color: pink;
+}
+
+#downloadButton {
+    border-radius: 10px;
+    border: 0px;
+}
+
+::selection {
+    background-color: pink;
+}
+
+#platformDropdown option:checked {
+    background-color: #2d728f;
+    color: pink;
 }
 
 .release {
