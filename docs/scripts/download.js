@@ -18,8 +18,6 @@ function is_on_windows() {
     return platformDropdown.value === 'windows';
 }
 
-const downloadButton = document.getElementById('downloadButton');
-
 async function fetchLatestRelease() {
     try {
         const response = await fetch(apiEndpoint);
@@ -54,4 +52,7 @@ function getSourceCodeDownloadURL(assets, version) {
     return path;
 }
 
-downloadButton.addEventListener('click', fetchLatestRelease);
+document.addEventListener("DOMContentLoaded" , function() {
+    const downloadButton = document.getElementById('downloadButton');
+    downloadButton.addEventListener('click', fetchLatestRelease);
+});
