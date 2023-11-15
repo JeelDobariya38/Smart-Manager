@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contributing to Smart Manager</title>
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <link rel="stylesheet" href="../prism/prism.css">
+    <script src="../prism/prism.js"></script>
+</head>
+
+<body style="font-size: 1.3em;">
+    <header>
+        <h1>Smart Manager</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="download.html">Download</a>
+        </nav>
+    </header>
+    
+    <h1>Contributing to Smart Manager</h1>
+
+    <section>
+        <p>Welcome to the Smart Manager project! We greatly value your interest in contributing to this endeavor.</p>
+
+        <h2>How to Contribute</h2>
+
+        <ol>
+            <li><strong>Fork the Repository:</strong> Begin by clicking the "Fork" button located in the upper right corner of the repository's page. This action creates a duplicate of the repository within your GitHub account.</li>
+
+            <li><strong>Clone Your Fork:</strong> Clone the forked repository to your local machine. Replace <code>YourUsername</code> with your GitHub username:
+                <pre class="lang-bash"><code>git clone https://github.com/YourUsername/Smart_Manager.git</code></pre>
+            </li>
+
+            <li><strong>Create a New Branch:</strong> Create a new branch for your contributions:
+                <pre class="lang-bash"><code>git checkout -b feature/your-feature-name</code></pre>
+            </li>
+
+            <li><strong>Make your changes:</strong> Implement your feature or fix.</li>
+
+            <li><strong>Test Your Changes:</strong> Ensure that your modifications do not disrupt current functionality. If applicable, add pertinent tests to cover your changes.</li>
+
+            <li><strong>Commit Your Changes:</strong> Commit your changes along with a descriptive message:
+                <pre class="lang-bash"><code>git commit -m 'Add your feature'</code></pre>
+            </li>
+
+            <li><strong>Push to Your Branch:</strong> Push your changes to your GitHub repository:
+                <pre class="lang-bash"><code>git push origin feature/your-feature-name</code></pre>
+            </li>
+
+            <li><strong>Submit a Pull Request:</strong> On the GitHub page of your fork, create a pull request. Provide comprehensive details about your changes and proceed to submit the pull request.</li>
+        </ol>
+
+        <h2>Reporting Issues</h2>
+
+        <p>If you come across any issues or have suggestions for improvement, kindly <a href="https://github.com/JeelDobariya38/Smart-Manager/issues">create an issue</a> on GitHub. Ensure to provide meticulous information about the problem and steps to reproduce it.</p>
+
+        <h2>Code Style</h2>
+
+        <p>Maintain consistency with the code style employed in the project, including uniform indentation and formatting. When in doubt, refer to the existing codebase for guidance.</p>
+
+        <h2>Code of Conduct</h2>
+
+        <p>Please be mindful that this project adheres to a <a href="CODE_OF_CONDUCT.md">Code of Conduct</a>. By participating, you agree to uphold these principles.</p>
+
+        <h2>Running the Smart Manager App Locally</h2>
+
+        <p>To run the Smart Manager app on your local environment, employ the provided Python script. Ensure Python is installed and that you are in the repository's root directory, then execute:</p>
+
+        <pre><code>python src/main.py</code></pre>
+
+        <h2>Contributing Code</h2>
+
+        <p>For code contributions, adhere to the coding conventions and encompass relevant tests.</p>
+
+        <h3>Example Code</h3>
+
+        <p>Here is an example Python script. Feel free to provide your feedback or contribute to enhance the repository's style:</p>
+
+        <pre class="lang-py"><code>def greet(name: str) -> None:
+    message = f"Hello, {name}!"
+    print(message)
+
+def calculate_sum(a: int | float, b: int | float) -> int | float:
+    result = a + b
+    return result
+
+if __name__ == "__main__":
+    user_name = input("Enter your name: ")
+    greet(user_name)
+
+    num1 = float(input("Enter the first number: "))
+    num2 = float(input("Enter the second number: "))
+
+    total = calculate_sum(num1, num2)
+    print(f"The sum is: {total}")
+        </code></pre>
+
+        <p><strong>Notable Code Elements for Reference</strong></p>
+
+        <ol>
+            <li><strong>Indentation:</strong> Consistently use 4 spaces for indentation, a widely accepted convention in Python, to maintain uniformity.</li>
+            <li><strong>Whitespace:</strong> Ensure consistency in spacing around operators and after commas, as observed in the existing codebase.</li>
+            <li><strong>Imports:</strong> Organize imports and follow the standard Python style. Group third-party imports at the top, preceded by a blank line, followed by built-in module imports.</li>
+            <li><strong>Function and Method Naming:</strong> Keep function and method names in lowercase with words separated by underscores (<code>snake_case</code>), in adherence to Python's recommended convention.</li>
+            <li><strong>Use of Type Hints:</strong> Continue using type hints for function arguments and return types to enhance code clarity and maintain readability.</li>
+        </ol>
+
+        <p>Remember, these guidelines are flexible, with the primary emphasis on maintaining consistency within the codebase.</p>
+
+        <h2>Feature Suggestions</h2>
+
+        <p>Should you possess ideas for new features or improvements, we encourage you to discuss them in the <a href="https://github.com/JeelDobariya38/Smart-Manager/discussions">GitHub Discussions</a> section.</p>
+
+        <p>Thank you for your valuable contributions to Smart Manager!</p>
+    </section>
+</body>
+
+</html>
