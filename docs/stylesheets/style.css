@@ -32,7 +32,51 @@ section {
 }
 
 #platformDropdown, #downloadButton {
-    background-color: var(--secondary-text-color);
+    background-color: pink;
+}
+
+#downloadButton {
+    border-radius: 10px;
+    border: 0px;
+}
+
+::selection {
+    background-color: pink;
+}
+
+#platformDropdown option:checked {
+    background-color: #2d728f;
+    color: pink;
+}
+
+.release {
+    color: white;
+    background-color: #211e1e;
+    padding: 5px 10px;
+    border: 6px solid #000;
+    border-radius: 20px;
+    margin: 10px 0px;
+}
+
+.release .info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.release .info div {
+    margin: 5px;
+}
+
+.release a {
+    color: rgb(36, 118, 185);
+    margin: 0px;
+    text-decoration: dashed;
+}
+
+.downloadbtn {
+    background-color: rgb(36, 118, 185);
+    border-radius: 12px;
+    border: 0px;
 }
 
 @media (max-width: 296px) {

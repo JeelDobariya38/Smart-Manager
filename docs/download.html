@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Manager | Download</title>
     <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="scripts/linkbreaker.js"></script>
+    <script src="scripts/download.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/2.0.3/marked.min.js"></script>
+    <script src="scripts/otherversion.js"></script>
 </head>
 <body>
     <header>
@@ -16,10 +20,10 @@
     </header>
     
     <section>
-        <p>Welcome to the download page for Smart Manager. Select your platform and click the button below to download the latest release.</p>
-        <p>For specific release or version, visit your GitHub repository's <a href="https://github.com/JeelDobariya38/smart-manager/releases">release page</a></p>
+        <h1>Latest Releases</h1>
+        <h4>Welcome to the download page for Smart Manager. Select your platform and click the button below to download the latest release.</h4>
 
-        <label for="platformDropdown">Select Your Platform:</label>
+        <label for="platformDropdown"><b>Select Your Platform:</b></label>
         <br>
         <select id="platformDropdown" defaultValue="python">
             <option value="python">Python</option>
@@ -35,7 +39,23 @@
         
         <p><strong>Recommendation:</strong> We strongly recommend downloading the Python version, especially if you are familiar with Python. This ensures a smoother experience and avoids any false positive warnings. Simply select the "Python" option from the dropdown.</p>
     </section>
+
     
-    <script src="scripts/download.js"></script>
+    <section>
+        <div class="other-version content">
+            <h1>Other Releases</h1>
+            <!-- <div class="release">
+            <h1>vX.X.X-type</h1>
+                <div class="info">
+                    <div>Prerelease: <span class="prerelease"></span></div>
+                    <div>Published At: <span class="prerelease"></span></div>
+                </div>
+                <p>
+                    baba..baba..baba...
+                </p>
+                <a href="#"><button>Download</button></a>
+            </div> -->
+        </div>
+    </section>
 </body>
 </html>
