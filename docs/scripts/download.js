@@ -1,4 +1,4 @@
-// Note: Below code assume that the asset for windows attach to release will have nameing patten as `smart-manager.${release.tag}.zip`
+// Note: Below code assume that the asset for windows attach to release will have nameing patten as `smart-manager.${release.tag}.${platform}.zip`.
 
 const apiEndpoint = 'https://api.github.com/repos/JeelDobariya38/smart-manager/releases/latest';
 
@@ -17,8 +17,6 @@ function is_on_windows() {
     const platformDropdown = document.getElementById('platformDropdown');
     return platformDropdown.value === 'windows';
 }
-
-const downloadButton = document.getElementById('downloadButton');
 
 async function fetchLatestRelease() {
     try {
@@ -54,4 +52,7 @@ function getSourceCodeDownloadURL(assets, version) {
     return path;
 }
 
-downloadButton.addEventListener('click', fetchLatestRelease);
+document.addEventListener("DOMContentLoaded" , function() {
+    const downloadButton = document.getElementById('downloadButton');
+    downloadButton.addEventListener('click', fetchLatestRelease);
+});
