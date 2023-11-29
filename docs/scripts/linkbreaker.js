@@ -5,6 +5,10 @@ function addWbrToLinks() {
     // Loop through each anchor tag
     for (var i = 0; i < links.length; i++) {
         var link = links[i];
+        
+        if (link.className.includes("ignore")) {
+            continue;
+        }
 
         // Get the original link
         var originalLink = link.innerHTML;
