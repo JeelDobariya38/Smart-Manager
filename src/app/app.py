@@ -1,10 +1,8 @@
 from pydevtools.output import output
+from pyfilehandling import fileio
 
 from app import eventhandler
 from app import metadata
-
-import os
-
 
 if __name__ == "__main__":
     print("This script is not intended for direct execution,")
@@ -13,8 +11,7 @@ if __name__ == "__main__":
 
 
 def init() -> None:
-    if not os.path.exists(metadata.DATADIR_PATH):
-        os.makedirs(metadata.DATADIR_PATH)
+    fileio.create_dir(metadata.DATADIR_PATH)
 
     print(f"Welcome to {metadata.NAME} Application")
     print()

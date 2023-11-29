@@ -42,8 +42,8 @@ document.addEventListener("DOMContentLoaded", function () {
                             <div><b>Published At: <span class="published-at">${release.published_at}</span></b></div>
                         </div>
                         <div class="notes">${convertedBody}</div>
-                        <a href="${pythondownloadlink}" target="_blank"><button class="downloadbtn"> Python Download</button></a>
-                        <a href="${windowsdownloadlink}" target="_blank"><button class="downloadbtn">Windows Download</button></a>
+                        <a class="ignore" href="${pythondownloadlink}" target="_blank"><button class="downloadbtn">Python Download</button></a>
+                        <a class="ignore" href="${windowsdownloadlink}" target="_blank"><button class="downloadbtn">Windows Download</button></a>
                     `;
                     otherReleasesContainer.appendChild(releaseElement);
                 }
