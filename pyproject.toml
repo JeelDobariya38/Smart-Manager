@@ -8,8 +8,6 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "3.12"
-pydevtools = {git = "https://github.com/JeelDobariya38/PyDevTools.git", rev = "v1.1.1"}
-pyfilehandling = "^3.2.0"
 
 [tool.poetry.group.lint.dependencies]
 flake8 = "^6.1.0"

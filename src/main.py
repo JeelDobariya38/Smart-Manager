@@ -1,10 +1,4 @@
-from pydevtools.output import output
-
 import app
-
-import sys
-
-ISDEBUGGING = False
 
 
 def main():
@@ -12,21 +6,9 @@ def main():
         app.init()
         app.main()
     except Exception as e:
-        output.print_error(e)
+        print("Error" + e)
         input()
 
 
-def debug():
-    app.init()
-    app.main()
-
-
 if __name__ == "__main__":
-    if len(sys.argv) >= 2:
-        ISDEBUGGING = "--debug" == sys.argv[1]
-
-    if ISDEBUGGING:
-        print("Active Debugging...\n")
-        debug()
-    else:
-        main()
+    main()
