@@ -2,4 +2,5 @@ def init():
     pass
 
 def main():
-    pass
+    print("Welcome to Smart Manager Application")
+    print()
