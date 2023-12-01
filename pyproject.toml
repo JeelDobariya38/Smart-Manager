@@ -7,9 +7,7 @@ license = "MIT"
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "3.12"
-pydevtools = {git = "https://github.com/JeelDobariya38/PyDevTools.git", rev = "v1.1.1"}
-pyfilehandling = "^3.2.0"
+python = ">=3.9, <3.13"
 
 [tool.poetry.group.lint.dependencies]
 flake8 = "^6.1.0"
