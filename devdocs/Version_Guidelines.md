@@ -40,8 +40,20 @@ Beta releases contain features under development but have undergone testing by d
 
 Stable releases are fully developed versions that provide a robust user experience. The code of stable releases has undergone comprehensive testing by developers. These versions are recommended for production-level usage and are considered safe for everyday tasks.
 
-Before using any release for production or personal purposes, it is essential to be familiar with the project's license terms and conditions.
-
-## Normal Releases
+### Normal Releases
 
 Releases without optional flags are considered normal releases. They offer a stability level between beta and stable releases. These versions aim to bridge the gap, providing dependable performance without the experimental nature of beta releases or the full stability of stable releases.
+
+## Optional Extra Flags
+
+Optional extra flags may be present in the name or description of a release, providing additional information about the release. Here are some of these flags with their meanings:
+
+### Deprecated
+
+A release with a `deprecated` flag must be considered a deprecated release, indicating that these releases are no longer maintained by the developer.
+
+### No Backward Compatible
+
+A release with this flag, and all other releases after it, must be considered as non-backward-compatible. This means that this release or future releases may not be compatible with releases lower than this.
+
+**Before using any release for production or personal purposes, it is essential to be familiar with the project's license terms and conditions.**
