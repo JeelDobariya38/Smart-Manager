@@ -1,16 +1,24 @@
-name: Run Tests
+name: Publish Package To PyPi
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+  release:
+    types: [published]
 
 jobs:
-  test:
+  Release-Nature:
     runs-on: ubuntu-latest
+
+    steps:
+      - name: Check release type
+        run: |
+          if [ "${{ github.event.release.prerelease }}" == "false" ]; then
+            echo "Stable Release."
+          else
+            echo "Prerelease Release"
+          fi
+    
+  Tests:
+    runs-on: ["ubuntu-latest", "windows-latest", "macOS-latest"]
 
     strategy:
       matrix:

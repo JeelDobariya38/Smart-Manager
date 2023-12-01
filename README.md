@@ -16,12 +16,43 @@ Smart Manager is a Python command-line application designed to securely store an
 
 ### Installation Guidelines
 
-- Comming Soon
+To install Smart Manager, follow these steps:
+
+1. Visit the [Smart Manager website](https://jeeldobariya38.github.io/Smart-Manager/) or [GitHub release page](https://github.com/JeelDobariya38/Smart-Manager/releases) to download the application.
+
+2. Once downloaded, unzip the file to extract its contents.
+
+3. Open a command prompt or terminal.
+
+4. Navigate to the unzipped Smart Manager folder.
+
+5. Install the required dependencies by running:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ### Running App
 
-- Comming Soon
+After completing the installation steps, you can run the application using one of the following methods:
 
+#### Option 1: Double Click (Graphical Interface)
+
+1. Navigate to the unzipped Smart Manager folder.
+
+2. Locate the `main.py` file, usually located in the root directory.
+
+3. Double-click on `main.py` to launch the application.
+
+#### Option 2: Command Line
+
+1. Navigate to the unzipped Smart Manager folder in the command prompt.
+
+2. Run the application using the following command:
+   ```bash
+   python main.py
+   ```
+
+These steps ensure a smooth installation process and provide options for running the application based on user preferences. If you encounter any issues during installation or have questions, feel free to check our [documentation](https://jeeldobariya38.github.io/Smart-Manager/) or troubleshooting guidelines.
 
 Now, you're all set to explore Smart Manager and manage your passwords securely!
 

@@ -50,19 +50,18 @@ section {
     margin: 10px 0px;
 }
 
-.release .info {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.release .info div {
-    margin: 5px;
-}
-
 .release a {
     color: rgb(36, 118, 185);
     margin: 0px;
     text-decoration: dashed;
+}
+
+.pre-release {
+    color: orange;
+}
+
+.deprecated-release {
+    color: orangered;
 }
 
 .downloadbtn {

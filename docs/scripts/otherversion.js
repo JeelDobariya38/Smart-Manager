@@ -31,12 +31,18 @@ document.addEventListener("DOMContentLoaded", function () {
                     }
                     var releaseElement = document.createElement('div');
                     releaseElement.classList.add('release');
+                    
+                    if (release.prerelease) {
+                        releaseElement.classList.add('pre-release');
+                    }
+
+                    if (release.name.includes("Deprecated")) {
+                        releaseElement.classList.add('deprecated-release');
+                    }
+
                     releaseElement.innerHTML = `
                         <h1>${release.name}</h1>
-                        <div class="info">
-                            <div><b>Prerelease: <span class="prerelease">${release.prerelease}</span></b></div>
-                            <div><b>Published At: <span class="published-at">${release.published_at}</span></b></div>
-                        </div>
+                        <div><b>Published At: <span class="published-at">${release.published_at}</span></b></div>
                         <div class="notes">${convertedBody}</div>
                         <a class="ignore" href="${pythondownloadlink}" target="_blank"><button class="downloadbtn">Download</button></a>
                     `;
