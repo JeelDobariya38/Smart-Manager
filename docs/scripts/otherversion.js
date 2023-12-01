@@ -22,14 +22,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (!release.draft) {
                     var convertedBody = marked(release.body); // <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/2.0.3/marked.min.js"></script>
                     var pythondownloadlink = '#';
-                    var windowsdownloadlink = '#';
                     for (var asset of release.assets) {
                         if (asset.name.endsWith(".zip")) {
                             if (asset.name.endsWith("python.zip")) {
                                 pythondownloadlink = asset.browser_download_url;
-                            }
-                            if (asset.name.endsWith("windows.zip")) {
-                                windowsdownloadlink = asset.browser_download_url;
                             }
                         }
                     }
@@ -42,8 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             <div><b>Published At: <span class="published-at">${release.published_at}</span></b></div>
                         </div>
                         <div class="notes">${convertedBody}</div>
-                        <a class="ignore" href="${pythondownloadlink}" target="_blank"><button class="downloadbtn">Python Download</button></a>
-                        <a class="ignore" href="${windowsdownloadlink}" target="_blank"><button class="downloadbtn">Windows Download</button></a>
+                        <a class="ignore" href="${pythondownloadlink}" target="_blank"><button class="downloadbtn">Download</button></a>
                     `;
                     otherReleasesContainer.appendChild(releaseElement);
                 }

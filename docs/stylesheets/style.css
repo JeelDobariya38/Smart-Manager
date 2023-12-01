@@ -31,22 +31,14 @@ section {
     margin: 10px;
 }
 
-#platformDropdown, #downloadButton {
-    background-color: pink;
-}
-
 #downloadButton {
+    background-color: pink;
     border-radius: 10px;
     border: 0px;
 }
 
 ::selection {
     background-color: pink;
-}
-
-#platformDropdown option:checked {
-    background-color: #2d728f;
-    color: pink;
 }
 
 .release {
