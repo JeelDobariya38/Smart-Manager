@@ -3,7 +3,7 @@ from abc import ABC, abstractmethod
 
 
 class PrintAble(Protocol):
-    def __repr__():
+    def __repr__(self):
         ...
 
 
