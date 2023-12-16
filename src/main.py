@@ -1,10 +1,17 @@
 import sys
 import os
 
-sys.path.insert(0, os.path.dirname(__file__))
+if os.path.dirname(__file__) not in sys.path:
+    sys.path.insert(0, os.path.dirname(__file__))
+
+from SmartManager import App
 
 
-import App as app
+def main():
+    app = App()
+    app.init()
+    app.main()
 
-app.init()
-app.main()
+
+if __name__ == "__main__":
+    main()
