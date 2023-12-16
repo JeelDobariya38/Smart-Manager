@@ -13,16 +13,16 @@ class Controller(ABC):
         pass
 
     @abstractmethod
-    def show_output(self, msg: str | PrintAble)-> None:
+    def show_output(self, msg: str | PrintAble) -> None:
         pass
 
 
 class CommandlineController(Controller):
     def __init__(self):
         pass
-    
+
     def get_input(self) -> str:
         return input()
 
-    def show_output(self, msg: str | PrintAble = "")-> None:
+    def show_output(self, msg: str | PrintAble = "") -> None:
         print(msg)
