@@ -9,11 +9,11 @@ class PrintAble(Protocol):
 
 class Controller(ABC):
     @abstractmethod
-    def getinput(self) -> str:
+    def get_input(self) -> str:
         pass
 
     @abstractmethod
-    def showoutput(self, msg: str | PrintAble)-> None:
+    def show_output(self, msg: str | PrintAble)-> None:
         pass
 
 
@@ -21,8 +21,8 @@ class CommandlineController(Controller):
     def __init__(self):
         pass
     
-    def getinput(self) -> str:
+    def get_input(self) -> str:
         return input()
 
-    def showoutput(self, msg: str | PrintAble = "")-> None:
+    def show_output(self, msg: str | PrintAble = "")-> None:
         print(msg)

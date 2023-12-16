@@ -7,9 +7,12 @@ class App:
     def init(self):
         pass
 
-    def welcome(self):
-        self.controller.showoutput("Welcome to Smart Manager Application")
-        self.controller.showoutput()
-    
     def main(self):
         self.welcome()
+
+    def quit(self):
+        pass
+    
+    def welcome(self):
+        self.controller.show_output("Welcome to Smart Manager Application")
+        self.controller.show_output()

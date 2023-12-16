@@ -12,3 +12,17 @@ if project_dir not in sys.path:
     sys.path.insert(0, project_dir)
     sys.path.insert(1, os.path.dirname(__file__))
     print("Resolveing Paths......")
+
+
+
+import pytest
+
+from mocking import MockController
+from smartmanager import App
+
+
+@pytest.fixture
+def SmartManger():
+    app = App(MockController())
+    yield app
+    app.quit()
