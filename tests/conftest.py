@@ -13,7 +13,7 @@ if project_dir not in sys.path:
     sys.path.insert(1, os.path.dirname(__file__))
     print("Resolveing Paths......")
 
-
+print(sys.path)
 
 import pytest
 

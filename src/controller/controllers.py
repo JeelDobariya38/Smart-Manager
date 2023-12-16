@@ -1,4 +1,4 @@
-from typing import Protocol
+from typing import Protocol, Union
 from abc import ABC, abstractmethod
 
 
@@ -13,7 +13,7 @@ class Controller(ABC):
         pass
 
     @abstractmethod
-    def show_output(self, msg: str | PrintAble) -> None:
+    def show_output(self, msg: Union[str, PrintAble]) -> None:
         pass
 
 
@@ -24,5 +24,5 @@ class CommandlineController(Controller):
     def get_input(self) -> str:
         return input()
 
-    def show_output(self, msg: str | PrintAble = "") -> None:
+    def show_output(self, msg: Union[str, PrintAble] = "") -> None:
         print(msg)

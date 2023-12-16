@@ -1,4 +1,4 @@
-from controller import Controller, PrintAble
+from src.controller import Controller, PrintAble
 
 from typing import List
 
