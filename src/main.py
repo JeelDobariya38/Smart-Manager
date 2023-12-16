@@ -1,14 +1,19 @@
 import sys
 import os
 
+
 if os.path.dirname(__file__) not in sys.path:
     sys.path.insert(0, os.path.dirname(__file__))
 
-from SmartManager import App
+
+# Running The Actual Application
+from smartmanager import App
+from controller import CommandlineController
 
 
 def main():
-    app = App()
+    controller = CommandlineController()
+    app = App(controller)
     app.init()
     app.main()
 
