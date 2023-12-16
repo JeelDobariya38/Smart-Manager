@@ -1,6 +1,6 @@
 from src.controller import Controller, PrintAble
 
-from typing import List
+from typing import List, Union
 
 
 class NoMoreMockInputsException(Exception):
@@ -22,5 +22,5 @@ class MockController(Controller):
         else:
             self.inputs.pop(0)
 
-    def show_output(self, msg: str | PrintAble = "")-> None:
+    def show_output(self, msg: Union[str, PrintAble] = "") -> None:
         print(msg)
