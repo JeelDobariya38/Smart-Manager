@@ -18,7 +18,7 @@ if project_dir not in sys.path:
 import pytest
 
 from mocking import MockController
-from smartmanager import App
+from src.smartmanager import App
 
 
 @pytest.fixture
