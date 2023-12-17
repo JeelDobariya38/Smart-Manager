@@ -1,5 +1,5 @@
-import sys
 import os
+import sys
 
 
 if os.path.dirname(__file__) not in sys.path:
@@ -7,11 +7,11 @@ if os.path.dirname(__file__) not in sys.path:
 
 
 # Running The Actual Application
-from smartmanager import App
 from controller import CommandlineController
+from smartmanager import App
 
 
-def main():
+def main() -> None:
     controller = CommandlineController()
     app = App(controller)
     app.init()
