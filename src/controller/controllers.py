@@ -1,5 +1,5 @@
-from typing import Protocol, Union
 from abc import ABC, abstractmethod
+from typing import Protocol, Union
 
 
 class PrintAble(Protocol):

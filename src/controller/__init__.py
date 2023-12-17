@@ -1,5 +1,5 @@
 from .controllers import (
-    PrintAble,
     CommandlineController,
-    Controller
+    Controller,
+    PrintAble,
 )
