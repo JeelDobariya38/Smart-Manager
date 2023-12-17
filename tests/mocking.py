@@ -20,7 +20,7 @@ class MockController(Controller):
         if len(self.inputs) == 0:
             raise NoMoreMockInputsException()
         else:
-            self.inputs.pop(0)
+            return self.inputs.pop(0)
 
     def show_output(self, msg: Union[str, PrintAble] = "") -> None:
         print(msg)
