@@ -11,7 +11,7 @@ from controller import CommandlineController
 from smartmanager import App
 
 
-def main():
+def main() -> None:
     controller = CommandlineController()
     app = App(controller)
     app.init()

@@ -3,7 +3,7 @@ from typing import Protocol, Union
 
 
 class PrintAble(Protocol):
-    def __repr__(self):
+    def __repr__(self) -> str:
         ...
 
 
