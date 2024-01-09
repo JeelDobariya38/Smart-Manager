@@ -10,12 +10,12 @@ readme = "README.md"
 python = ">=3.9, <3.13"
 
 [tool.poetry.group.lint.dependencies]
-flake8 = "^6.1.0"
-mypy = "^1.7.0"
+flake8 = "^7.0.0"
+mypy = "^1.8.0"
 
 [tool.poetry.group.test.dependencies]
-pytest = "^7.4.3"
-coverage = "^7.3.2"
+pytest = "^7.4.4"
+coverage = "^7.4.0"
 
 [build-system]
 requires = ["poetry-core"]
