@@ -11,7 +11,7 @@ python = ">=3.9, <3.13"
 
 [tool.poetry.group.lint.dependencies]
 flake8 = "^7.0.0"
-mypy = "^1.7.0"
+mypy = "^1.8.0"
 
 [tool.poetry.group.test.dependencies]
 pytest = "^7.4.4"
