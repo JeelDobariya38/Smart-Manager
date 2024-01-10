@@ -33,11 +33,11 @@ jobs:
 
     - name: Run MyPy
       run: |
-        poetry run mypy src
+        poetry run mypy SmartManager
     
     - name: Run Flake8
       run: |
-        poetry run flake8 src
+        poetry run flake8 SmartManager
 
     - name: Run Pytest
       run: |

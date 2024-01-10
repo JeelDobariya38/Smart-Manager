@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "Smart-Manager"
+name = "SmartManager"
 version = "2.0.0-Beta"
 description = "Smart Manager is a Python command-line application designed to securely store and manage passwords and authentication-related data."
 authors = ["Jeel Dobariya <dobariyaj34@gmail.com>"]
