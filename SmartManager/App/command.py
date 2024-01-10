@@ -1,10 +1,13 @@
 from abc import ABC, abstractmethod
-from typing import Self, List
+from typing import List
 
 
 class CommandInterface(ABC):
+    repr: str = ""
+    hint: str = "Command class for Controlling other commands.."
+
     @abstractmethod
-    def convert_to_command(self, textrepr: str) -> Self:
+    def convert_to_command(self, textrepr: str) -> CommandInterface:
         pass
 
     @abstractmethod
@@ -19,9 +22,9 @@ class CommandInterface(ABC):
 class Command(CommandInterface):
     repr: str = ""
     hint: str = "Command class for Controlling other commands.."
-    commands: List[Self] = []
+    commands: List[CommandInterface] = []
 
-    def convert_to_command(self, textrepr: str) -> Self:
+    def convert_to_command(self, textrepr: str) -> CommandInterface:
         textrepr = textrepr.lower()
         for command in self.commands:
             if command.match(textrepr):
