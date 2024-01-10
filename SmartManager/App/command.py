@@ -47,7 +47,7 @@ class InvalidCommand(Command):
         return True
 
     def execute(self, controller):
-        controller.userinterface.show_output("Invaild Command!!")
+        controller.userinterface.show_output("Invalid Command!!")
 
 
 class WelcomeCommand(Command):
