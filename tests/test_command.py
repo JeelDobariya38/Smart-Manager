@@ -11,17 +11,18 @@ def test_add_command():
 
 def test_help_command_execution(capsys, controller):
     command = HelpCommand()
-    
     command.execute(controller)
-
     captured = capsys.readouterr()
     assert "Here is list of valid Commands:\n\n" in captured.out
     assert "Commands:\n" in captured.out
 
 def test_invalid_command_execution(capsys, controller):
     command = InvalidCommand()
-
     command.execute(controller)
-
     captured = capsys.readouterr()
     assert "Invalid Command!!" in captured.out
+
+def test_quit_command_execution(controller):
+    command = QuitCommand()
+    command.execute(controller)
+    assert not controller.isrunning()
