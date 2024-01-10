@@ -17,6 +17,8 @@ class CommandInterface(ABC):
 
 
 class Command(CommandInterface):
+    repr: str = ""
+    hint: str = "Command class for Controlling other commands.."
     commands: List[Self] = []
 
     def convert_to_command(self, textrepr: str) -> Self:
@@ -64,7 +66,28 @@ class EmptyCommand(Command):
 Command.add(EmptyCommand())
 
 
+class HelpCommand(Command):
+    repr: str = "help"
+    hint: str = "For Showing Help Prompt"
+
+    def match(self, textrepr: str) -> bool:
+        return textrepr == "help"
+
+    def execute(self, controller):
+        msg = "Here is list of valid Commands:\n\n"
+        msg += "Commands:\n"
+        for command in self.commands:
+            if command.repr != "":
+                msg += f"    - {command.repr}: {command.hint}\n"
+        controller.userinterface.show_output(msg)
+
+Command.add(HelpCommand())
+
+
 class QuitCommand(Command):
+    repr: str = "quit"
+    hint: str = "For Quitting The Application"
+
     def match(self, textrepr: str) -> bool:
         return textrepr in ["quit", "exit"]
 
