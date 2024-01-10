@@ -7,7 +7,7 @@ class CommandInterface(ABC):
     hint: str = "Command class for Controlling other commands.."
 
     @abstractmethod
-    def convert_to_command(self, textrepr: str) -> CommandInterface:
+    def convert_to_command(self, textrepr: str):
         pass
 
     @abstractmethod
