@@ -1,6 +1,8 @@
-from .interface import UserInterface, CLI
-from .command import CommandInterface, Command, InvalidCommand, WelcomeCommand
-from .datahandler import Datahandler
+from SmartManager.App.interface import UserInterface, CLI
+from SmartManager.App.command import (
+    CommandInterface, Command, InvalidCommand, WelcomeCommand
+)
+from SmartManager.App.datahandler import Datahandler
 
 
 class Controller:
@@ -27,12 +29,12 @@ class Controller:
     def welcome(self):
         WelcomeCommand().execute(self)
 
-    def get_command(self) -> Command:
+    def get_command(self) -> CommandInterface:
         textrepr = self.userinterface.get_input(">> ")
         try:
             return self.command.convert_to_command(textrepr)
         except ValueError as _:
             return InvalidCommand()
 
-    def execute_command(self, command: Command):
+    def execute_command(self, command: CommandInterface):
         command.execute(self)

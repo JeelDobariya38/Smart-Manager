@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from typing import Self
+from typing import Self, List
 
 
 class CommandInterface(ABC):
@@ -17,7 +17,7 @@ class CommandInterface(ABC):
 
 
 class Command(CommandInterface):
-    commands: Self = []
+    commands: List[Self] = []
 
     def convert_to_command(self, textrepr: str) -> Self:
         textrepr = textrepr.lower()
@@ -27,8 +27,8 @@ class Command(CommandInterface):
         raise ValueError("Not a valid text representaion of Command!!")
 
     @staticmethod
-    def add(command: CommandInterface) -> None:
-        Command.commands.append(command)
+    def add(command) -> None:
+        Command.commands.append(command)  # type: ignore[misc]
 
     def match(self, textrepr: str) -> bool:
         return False
@@ -51,6 +51,7 @@ class WelcomeCommand(Command):
 
     def execute(self, controller):
         controller.userinterface.show_output("Welcome To Smart Manager")
+        controller.userinterface.show_output()
 
 
 class EmptyCommand(Command):

@@ -1,5 +1,5 @@
-from App import app
-from Database.localdriver import LocalDriver
+from SmartManager.App import app  # noqa: F401, F403
+from SmartManager.Database.localdriver import LocalDriver  # noqa: F401, F403
 
 
 def app_run():
