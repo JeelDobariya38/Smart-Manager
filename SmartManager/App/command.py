@@ -53,6 +53,16 @@ class WelcomeCommand(Command):
         controller.userinterface.show_output("Welcome To Smart Manager")
 
 
+class EmptyCommand(Command):
+    def match(self, textrepr: str) -> bool:
+        return textrepr == ""
+
+    def execute(self, controller):
+        pass
+
+Command.add(EmptyCommand())
+
+
 class QuitCommand(Command):
     def match(self, textrepr: str) -> bool:
         return textrepr in ["quit", "exit"]
@@ -60,6 +70,5 @@ class QuitCommand(Command):
     def execute(self, controller):
         controller.userinterface.show_output("Quitting the application...")
         controller.quit()
-
 
 Command.add(QuitCommand())

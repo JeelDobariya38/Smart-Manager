@@ -1,6 +1,6 @@
 class Datahandler:
     databasedriver = None
-    
+
     def __init__(self):
         pass
 
