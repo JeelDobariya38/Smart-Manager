@@ -39,7 +39,7 @@ After completing the installation steps, you can run the application using one o
 
 1. Navigate to the unzipped Smart Manager folder.
 
-2. Locate the `main.py` file, usually located in the root directory.
+2. Locate the `main.py` file, usually located in the `root/SmartManager` directory.
 
 3. Double-click on `main.py` to launch the application.
 
@@ -49,7 +49,7 @@ After completing the installation steps, you can run the application using one o
 
 2. Run the application using the following command:
    ```bash
-   python main.py
+   python SmartManager/main.py
    ```
 
 These steps ensure a smooth installation process and provide options for running the application based on user preferences. If you encounter any issues during installation or have questions, feel free to check our [documentation](https://jeeldobariya38.github.io/Smart-Manager/) or troubleshooting guidelines.
