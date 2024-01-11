@@ -18,6 +18,7 @@ changelog:
     - title: Documentation 📚
       labels:
         - documentation
+        - website
 
     - title: Testing 🧪
       labels:
