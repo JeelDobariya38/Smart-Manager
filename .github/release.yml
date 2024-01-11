@@ -24,7 +24,7 @@ changelog:
       labels:
         - tests
         - testing
-        -testcases
+        - testcases
 
     - title: Dependency
       labels:
