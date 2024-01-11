@@ -19,6 +19,16 @@ changelog:
       labels:
         - documentation
         - website
+
+    - title: Testing 🧪
+      labels:
+        - tests
+        - testing
+        -testcases
+
+    - title: Dependency
+      labels:
+        - dependencies
     
     - title: Other Changes
       labels:
