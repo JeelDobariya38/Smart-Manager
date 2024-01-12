@@ -6,7 +6,7 @@ class SqliteDriver:
         self.database_path = databasepath
         self.initlize_database()
     
-    def initlizeddatabase(self):
+    def initlize_database(self):
         db = sqlite3.connect(self.database_path)
         db.close()
     

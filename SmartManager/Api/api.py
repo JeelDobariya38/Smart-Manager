@@ -1,6 +1,8 @@
 from fastapi import FastAPI
 
+from .databaseinfo import DatabaseInfo
 
+DATABASE_INFO = DatabaseInfo()
 api = FastAPI()
 
 
