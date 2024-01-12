@@ -4,13 +4,15 @@ from Database.sqlitedriver import SqliteDriver  # noqa: F401, F403
 
 import uvicorn
 
+def get_database_path():
+    return ""
 
 def api_run(hostaddress: str = "127.0.0.1", portno: int = 8000):
     uvicorn.run(app=api, host=hostaddress, port=portno)
 
 
 def app_run():
-    app.init(SqliteDriver())
+    app.init(SqliteDriver(get_database_path()))
     app.main()
 
 
