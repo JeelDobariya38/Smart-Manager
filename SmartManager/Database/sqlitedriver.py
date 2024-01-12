@@ -10,5 +10,8 @@ class SqliteDriver:
         db = sqlite3.connect(self.database_path)
         db.close()
     
+    def setup(self):
+        pass
+    
     def execute_sql(self, sql_query) -> None:
         return
