@@ -9,7 +9,7 @@ import json
 
 def get_config():
     file_path = os.path.dirname(__file__)
-    path = os.path.join(file_path, '..', 'smart_manager_config.json')
+    path = os.path.join(file_path, '..', 'smart_manager.json')
     jsonconfg = json.load(open(path))
     return jsonconfg["settings"]
 

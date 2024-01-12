@@ -9,7 +9,7 @@
     },
     "made-in": "python",
     "settings": {
-        "api": true,
+        "api": false,
         "api-server-config": {
             "host": "127.0.0.1",
             "port": 8000

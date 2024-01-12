@@ -17,5 +17,5 @@ def root():
 @api.get("/info")
 def info():
     file_path = os.path.dirname(__file__)
-    path = os.path.join(file_path, '..', '..', 'smart_manager_config.json')
+    path = os.path.join(file_path, '..', '..', 'smart_manager.json')
     return json.load(open(path))
