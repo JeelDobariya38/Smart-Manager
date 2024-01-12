@@ -1,4 +1,4 @@
-# Smart Manager - Securing Passwords, Simplifying Authentication
+# Smart Manager - Securing Passwords, Streamling Authentication
 
 [![Run-Tests](https://github.com/JeelDobariya38/smart-manager/actions/workflows/Run-Tests.yaml/badge.svg)](https://github.com/JeelDobariya38/smart-manager/actions/workflows/Run-Tests.yaml) [![pages-build-deployment](https://github.com/JeelDobariya38/smart-manager/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/JeelDobariya38/smart-manager/actions/workflows/pages/pages-build-deployment)
 
