@@ -1,23 +1,27 @@
 [tool.poetry]
 name = "SmartManager"
-version = "2.0.0-Beta"
+version = "2.0.1"
 description = "Smart Manager is a Python command-line application designed to securely store and manage passwords and authentication-related data."
 authors = ["Jeel Dobariya <dobariyaj34@gmail.com>"]
 license = "MIT"
 readme = "README.md"
+
 
 [tool.poetry.dependencies]
 python = ">=3.9, <3.13"
 fastapi = "^0.109.0"
 uvicorn = {extras = ["standard"], version = "^0.25.0"}
 
+
 [tool.poetry.group.lint.dependencies]
 flake8 = "^7.0.0"
 mypy = "^1.8.0"
 
+
 [tool.poetry.group.test.dependencies]
 pytest = "^7.4.4"
 coverage = "^7.4.0"
+
 
 [build-system]
 requires = ["poetry-core"]

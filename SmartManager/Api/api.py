@@ -1,6 +1,11 @@
 from fastapi import FastAPI
 
+from .databaseinfo import DatabaseInfo
 
+import os
+import json
+
+DATABASE_INFO = DatabaseInfo()
 api = FastAPI()
 
 
@@ -11,9 +16,6 @@ def root():
 
 @api.get("/info")
 def info():
-    return {
-        "title": "Smart Manager",
-        "subtitle": "Securing Passwords, Streamlining Authentication",
-        "description": "Smart Manager is a Python command-line application designed to securely store and manage passwords and authentication-related data.",  # noqa: E501
-        "url": "https://github.com/JeelDobariya38/Smart-Manager"
-    }
+    file_path = os.path.dirname(__file__)
+    path = os.path.join(file_path, '..', '..', 'smart_manager.json')
+    return json.load(open(path))

@@ -1,80 +1,43 @@
-from SmartManager.App import app  # noqa: F401, F403
-from SmartManager.Api import api  # noqa: F401, F403
-from SmartManager.Database.sqlitedriver import SqliteDriver  # noqa: F401, F403
+from App import app  # noqa: F401, F403
+from Api import api, DATABASE_INFO  # noqa: F401, F403
+from Database.sqlitedriver import SqliteDriver  # noqa: F401, F403
 
-import sys
+import os
 import uvicorn
-from typing import Dict, List
+import json
 
 
-def help(option: str = ""):
-    print("Smart Manager: Securing Passwords, Streamlining Authentication")
-    print("")
-
-    if option == "":
-        print("Options:")
-        print("\t--serve: Run the API")
-        print("\t--help:  Show help message")
-
-    if option == "serve" or option == "--serve":
-        print("\"Serve\" option:")
-        print("\t--serve: Used for running the API")
-        print()
-        print("Suboptions:")
-        print("\t--host: Provide a host for the API (default: 127.0.0.1)")
-        print("\t--port: Provide a port for the API (default: 8000)")
-
-    print()
-    print("use \"--help [option]\" to get further infomation about the option")
-    sys.exit()
+def get_config():
+    file_path = os.path.dirname(__file__)
+    path = os.path.join(file_path, '..', 'smart_manager.json')
+    jsonconfg = json.load(open(path))
+    return jsonconfg["settings"]
 
 
-def argparser(args: List) -> Dict:
-    result = dict()
-    if len(args) > 1:
-        try:
-            for index, arg in enumerate(args, 1):
-                if arg == "--help":
-                    if len(args) - 1 == index:
-                        result["help"] = args[index]
-                        return result
-                    help()
-
-                # api server
-                if arg == "--serve":
-                    result["serve"] = True
-
-                if arg == "--host":
-                    result["host"] = args[index]
-
-                if arg == "--port":
-                    result["port"] = int(args[index])
-
-        except IndexError as e:
-            raise ValueError("Provide args ar not valid.")
-    return result
+def get_databasepath():
+    file_path = os.path.dirname(__file__)
+    return os.path.join(file_path, "SmartManager.db")
 
 
-def api_run(hostaddress: str = "127.0.0.1", portno: int = 8000):
+def api_run(dbpath, hostaddress: str = "127.0.0.1", portno: int = 8000):
+    DATABASE_INFO.set_database_path(dbpath)
     uvicorn.run(app=api, host=hostaddress, port=portno)
 
 
-def app_run():
-    app.init(SqliteDriver())
+def app_run(dbpath):
+    app.init(SqliteDriver(dbpath))
     app.main()
 
 
 if __name__ == "__main__":
-    args = argparser(sys.argv)
+    config = get_config()
+    databasepath = get_databasepath()
 
-    option = args.get("help", None)
-
-    if option != None:  # noqa: E711
-        help(option)
-
-    if args.get("serve", False):
-        host = args.get("host", "127.0.0.1")
-        port = args.get("port", 8000)
-        api_run(host, port)
-    else:
-        app_run()
+    try:
+        if config.get("api", False):
+            apiconfg = config.get("api-server-config")
+            api_run(databasepath, apiconfg["host"], apiconfg["port"])
+        else:
+            app_run(databasepath)
+    except KeyError as e:
+        raise ValueError("Config file is invalid!!")

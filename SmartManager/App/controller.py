@@ -1,8 +1,8 @@
-from SmartManager.App.interface import UserInterface, CLI
-from SmartManager.App.command import (
+from .interface import UserInterface, CLI
+from .command import (
     CommandInterface, Command, InvalidCommand, WelcomeCommand
 )
-from SmartManager.App.datahandler import Datahandler
+from .datahandler import Datahandler
 
 
 class Controller:

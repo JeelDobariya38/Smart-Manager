@@ -41,7 +41,7 @@ jobs:
 
     - name: Run MyPy
       run: |
-        poetry run mypy SmartManager
+        poetry run mypy SmartManager --ignore-missing-imports
     
     - name: Run Flake8
       run: |

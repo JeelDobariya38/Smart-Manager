@@ -1,4 +1,4 @@
-from SmartManager.App.controller import Controller
+from .controller import Controller
 
 CONTROLLER: Controller = Controller()
 
