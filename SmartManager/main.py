@@ -32,11 +32,11 @@ def app_run(dbpath):
 if __name__ == "__main__":
     config = get_config()
     databasepath = get_databasepath()
-    
+
     try:
         if config.get("api", False):
-                apiconfg = config.get("api-server-config")
-                api_run(databasepath, apiconfg["host"], apiconfg["port"])
+            apiconfg = config.get("api-server-config")
+            api_run(databasepath, apiconfg["host"], apiconfg["port"])
         else:
             app_run(databasepath)
     except KeyError as e:
