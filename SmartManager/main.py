@@ -1,5 +1,5 @@
 from SmartManager.App import app  # noqa: F401, F403
-from SmartManager.Api import api
+from SmartManager.Api import api  # noqa: F401, F403
 from SmartManager.Database.sqlitedriver import SqliteDriver  # noqa: F401, F403
 
 import sys
@@ -23,7 +23,7 @@ def help(option: str = ""):
         print("Suboptions:")
         print("\t--host: Provide a host for the API (default: 127.0.0.1)")
         print("\t--port: Provide a port for the API (default: 8000)")
-    
+
     print()
     print("use \"--help [option]\" to get further infomation about the option")
     sys.exit()
@@ -35,21 +35,21 @@ def argparser(args: List) -> Dict:
         try:
             for index, arg in enumerate(args, 1):
                 if arg == "--help":
-                    if len(args)-1 == index:
+                    if len(args) - 1 == index:
                         result["help"] = args[index]
                         return result
                     help()
-                
+
                 # api server
                 if arg == "--serve":
                     result["serve"] = True
-                
+
                 if arg == "--host":
                     result["host"] = args[index]
-                
+
                 if arg == "--port":
                     result["port"] = int(args[index])
-        
+
         except IndexError as e:
             raise ValueError("Provide args ar not valid.")
     return result
@@ -66,10 +66,10 @@ def app_run():
 
 if __name__ == "__main__":
     args = argparser(sys.argv)
-    
+
     option = args.get("help", None)
-    
-    if option != None:
+
+    if option != None:  # noqa: E711
         help(option)
 
     if args.get("serve", False):
