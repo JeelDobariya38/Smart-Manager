@@ -44,16 +44,16 @@ If you come across any issues or have suggestions for improvement, kindly [creat
 
 Maintain consistency with the code style employed in the project, including uniform indentation and formatting. When in doubt, refer to the existing codebase for guidance.
 
-## Code of Conduct
+<!-- ## Code of Conduct
 
-Please be mindful that this project adheres to a [Code of Conduct](CODE_OF_CONDUCT.md). By participating, you agree to uphold these principles.
+Please be mindful that this project adheres to a [Code of Conduct](CODE_OF_CONDUCT.md). By participating, you agree to uphold these principles. -->
 
 ## Running the Smart Manager App Locally
 
 To run the Smart Manager app on your local environment, employ the provided Python script. Ensure Python is installed and that you are in the repository's root directory, then execute:
 
 ```bash
-python src/main.py
+python SmartManager/main.py
 ```
 
 ## Contributing Code
