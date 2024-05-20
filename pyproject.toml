@@ -19,7 +19,7 @@ mypy = "^1.8.0"
 
 
 [tool.poetry.group.test.dependencies]
-pytest = "^8.1.1"
+pytest = "^8.2.1"
 coverage = "^7.4.4"
 
 
