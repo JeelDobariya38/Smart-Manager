@@ -1,5 +1,5 @@
 > Archriving SmartManager Repo - It Has Lots of Design Issues and Has Problems [#23](https://github.com/JeelDobariya38/Smart-Manager/issues/23), [#27](https://github.com/JeelDobariya38/Smart-Manager/issues/27),
-> We are initiating a similar project!! But, This time in java called PassCodes. You can find it in my account ["JeelDobariya38/PassCodes"](https://github.com/JeelDobariya38/PassCodes)
+> We are initiating a similar project!! But, This time in java called PassCodes. You can find it in my account ["JeelDobariya38/PassCodes"](https://github.com/JeelDobariya38/PassCodes). May be in Future, I might Restart it Development..
 
 # Smart Manager - Securing Passwords, Streamling Authentication
 
