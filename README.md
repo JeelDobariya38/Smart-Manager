@@ -1,3 +1,5 @@
+> Archriving Repo - It Has Lots of Design Issues and Has Problems [#23](https://github.com/JeelDobariya38/Smart-Manager/issues/23) [#27](https://github.com/JeelDobariya38/Smart-Manager/issues/27)
+
 # Smart Manager - Securing Passwords, Streamling Authentication
 
 [![Run-Tests](https://github.com/JeelDobariya38/smart-manager/actions/workflows/Run-Tests.yaml/badge.svg)](https://github.com/JeelDobariya38/smart-manager/actions/workflows/Run-Tests.yaml) [![pages-build-deployment](https://github.com/JeelDobariya38/smart-manager/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/JeelDobariya38/smart-manager/actions/workflows/pages/pages-build-deployment)
